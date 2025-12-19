@@ -1,0 +1,25 @@
+const hoverVideo = document.querySelector(".hover-container");
+
+if (hoverVideo) {
+    const video = hoverVideo.querySelector(".hover-video");
+    const image = hoverVideo.querySelector(".hover-img");
+
+    // マウスが乗った場合
+    hoverVideo.addEventListener("mouseenter", () => {
+        // 画像を消して動画を表示
+        image.style.display = "none";
+        video.style.display = "block";
+        // 動画を再生
+        video.currentTime = 0;
+        video.play();
+    });
+
+    // マウスが外れた場合
+    hoverVideo.addEventListener("mouseleave", () => {
+        // 再生を止める
+        video.pause();
+        // 再生を画像に戻す
+        video.style.display = "none";
+        image.style.display = "block";
+    });
+}

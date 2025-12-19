@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C5-04</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>背景に動画を配置する</h1>
+    <div class="video-container">
+        <h2 class="video-heading">再生し続ける背景動画</h2>
+        <video class="video-bg" autoplay loop muted plays>
+            <source src="images/bg-flower.mp4" type="video/mp4">
+        <!-- ビデオが停止した場合 -->
+         <img src="images/bg-flower.jpg" alt="お花畑">
+        </video>
+    </div>
+
+    <h2>ホバーで動画再生</h2>
+    <div class="hover-container">
+        <img class="hover-img" src="images/bg-flower.jpg" alt="">
+        <video class="hover-video" src="images/bg-flower.mp4" autoplay loop muted playsinline></video>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

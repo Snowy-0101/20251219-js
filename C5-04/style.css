@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: #000;
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+}
+
+/* CSS animation */
+.video-container {
+    position: relative;
+}
+
+.video-heading {
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+}
+
+.video-bg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* Javascript */
+.hover-container {
+    position: relative;
+}
+
+.hover-img, .hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: auto;
+    display: block;
+}
+
+.hover-video {
+    display: none;
+}
